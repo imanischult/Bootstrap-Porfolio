@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bootstrap Portfolio</title>
+        <title>Bootstrap Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
+        <!--Navbar from bootstrap-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="./index.html">Imani Schulterbrandt</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -21,7 +23,8 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./index.html">About <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./portfolio.html">Portfolio</a>
@@ -33,6 +36,44 @@
             </div>
         </nav>
 
+        <!--Container with form styling from bootstrap-->
+        <div class="container">
+            
+            <!--Heading for the form-->
+            <div class="row" id="heading">
+                <h1>Contact</h1>
+            </div>
+
+            <!--Content for the form-->
+            <div class="row" id="main-content">
+                <div class="col-md-9">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Name</label>
+                            <input type="email" class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="Jane Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control"
+                                id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+         <!--Footer from bootstrap-->
+         <div class="card-footer text-muted">
+                Copyright
+        </div>
+
     </body>
 </html>
-
